@@ -59,7 +59,7 @@ const priceData = ref([
 				<p>Quick, reliable and secure, rTenant™ allows landlords and property owners to run eviction checks on prospective renters easily online and make educated leasing decisions within a matter of minutes. Reports are generated and sent directly to you.
 				</p>
 				<ul class="pricelist">
-					<PriceItem v-for="(item, index) in priceData" :featured="item.featured" :id="item.id" :title="item.title" :price="item.price" :checklist="item.checklist" :key="index"></PriceItem>
+					<PriceItem v-for="(item, index) in priceData" :featured="item.featured" :id="item.id" :title="item.title" :price="item.price" :oldprice="item.oldPrice" :checklist="item.checklist" :key="index"></PriceItem>
 				</ul>
 				 
 			</div>

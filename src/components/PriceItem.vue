@@ -8,7 +8,8 @@ const props = defineProps({
     title: String,
     price: String,
     checklist: Array,
-    featured: Boolean
+    featured: Boolean,
+    oldprice: Number
 });
 
 // allow someone to add/remove from cart. When someone clicks add to cart, it should update the header nav section to show (if not present) a shopping cart and number indicating number of items added
@@ -30,7 +31,7 @@ function removeFromCart(item) {
             </div>
             <h4 v-html="props.title"></h4>
             <h3 v-html="props.price"></h3>
-            <h3 v-if="props.oldprice" class="oldprice">{{ props.oldprice }}</h3>
+            <h3 v-if="props.oldprice !== null" class="oldprice">${{ props.oldprice.toFixed(2) }}</h3>
             <a v-else href="#" class="viewSample">View Sample</a>
         </div>
         <ul class="checklist">
