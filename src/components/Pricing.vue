@@ -1,8 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import PriceItem from "./PriceItem.vue";
-//import a store that can update/get data for the cart from 
-//any Vue component
+//simulate data response (perhaps from an api call/AJAX request)
 const priceData = ref([
 	{
 		id: 'Enhanced Landlord Rental Eviction History',
